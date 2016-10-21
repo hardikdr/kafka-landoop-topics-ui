@@ -1,0 +1,335 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.ace_editor {
+    height: 460px;
+}
+
+.ace_gutter {
+    background: #f9f9f9 !important;
+}
+
+header.header {
+    background-color: #141414;
+    min-height: 20px;
+    color: #ebebeb;
+    margin-bottom: 0;
+}
+
+.header-section {
+    background-color: #4F6375;
+    color: #ebebeb;
+    border-bottom: 0 solid #2b3e50;
+    padding: 4px 0;
+    margin-bottom: 0;
+}
+
+.container-fluid-centered {
+    height: 100%;
+    display: table;
+    width: 100%;
+    padding: 0;
+}
+
+a:link, header.a:visited, header.a:hover, header.a:active {
+    text-decoration: none;
+}
+
+.row-fluid {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.textareacode {
+    border-radius: 3px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+    border: 1px solid #ccc;
+    width: 95%;
+    font: 12px Consolas, Menlo, Courier, monospace;
+}
+
+.example {
+    position: relative;
+    margin: 15px 0 0;
+    padding: 39px 19px 14px;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #ddd;
+    z-index: 2;
+}
+.normalcontent.ng-scope {
+    overflow:initial}
+}
+
+.leftlistPagination .pagination {
+    margin:0;
+}
+
+.toggleconfig {
+    float: right;
+    color: #448AFF;
+}
+.example1:after {
+    content: "Register a Complex Schema";
+}
+
+.example2:after {
+    content: "Test Schema Compatibility";
+}
+
+.example:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    color: #9da0a4;
+    border-radius: 4px 0 4px 0;
+}
+
+.snippet {
+    position: relative;
+    overflow: visible;
+}
+
+pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.centering {
+    float: none;
+    margin: 0 auto;
+}
+
+.bs-callout-warning {
+    border-left-color: #228415 !important;
+}
+
+.bs-callout {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #4f6375;
+    color: white;
+    font-size: 16px;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    min-width: 250px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: green;
+    min-width: 250px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #6e8294
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #4f6375;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #4f6375;
+}
+
+md-card {
+    margin: 0;
+}
+
+md-toast.md-default-theme .md-toast-content, md-toast .md-toast-content {
+    margin-top: 70px;
+    margin-right: 25px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+md-chips.md-default-theme .md-chips, md-chips .md-chips {
+    box-shadow: none;
+}
+
+.md-button.light-blue {
+    background-color: rgba(74, 163, 223, 1);
+}
+
+/* Essential for dirPagination material design */
+.md-button {
+    min-width: 30px;
+}
+
+/** Pagination **/
+.label-primary {
+    background-color: #286090;
+}
+
+.md-whiteframe-1dp, .md-whiteframe-z1 {
+    box-shadow: none;
+}
+/*
+.md-whiteframe-2dp {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.md-whiteframe-2dp:focus {
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.4), 0 2px 2px 0 rgba(0, 0, 0, 0.28), 0 3px 1px -2px rgba(0, 0, 0, 0.24);
+}
+*/
+
+.md-button.light-blue {
+    background-color: rgba(74, 163, 223, 1);
+}
+
+.fabSpeedDial.text-capitalize {
+    text-transform: capitalize;
+}
+
+.md-button.md-fab {
+    width: 42px;
+    height: 42px;
+    background-color: white;
+}
+
+.fabSpeedDial .lock-size {
+    min-width: 300px;
+    min-height: 300px;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.md-button.md-default-theme.md-warn.md-raised, a.md-button.md-warn.md-raised, a.md-button.md-default-theme.md-warn.md-fab, a.md-button.md-warn.md-fab, .md-button.md-default-theme.md-warn.md-raised, .md-button.md-warn.md-raised, .md-button.md-default-theme.md-warn.md-fab, .md-button.md-warn.md-fab {
+    color: rgb(255, 255, 255);
+    background-color: rgba(169, 169, 169, 0.1);
+}
+
+/* Custom topics-ui CSS */
+md-list-item.md-2-line, md-list-item.md-2-line > .md-no-style {
+    min-height: 0;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+md-card md-card-title {
+    padding-bottom: 10px;
+}
+
+.md-tooltip ._md-content {
+    height: auto;
+}
+
+.grid {
+    width: 920px;
+    height: 525px;
+}
+
+.grid-center {
+    text-align: center;
+}
+
+/*.ui-grid-header-cell {*/
+/*border-color: #d4d4d4 !important;*/
+/*}*/
+
+.grid-header-landoop {
+    color: #a8a8a8;
+    background-color: #fafafa !important;
+    font: 500 15px Arial, Helvetica, sans-serif;
+}
+.grid-header-landoop-small {
+    color: #a8a8a8;
+    background-color: #fafafa !important;
+    font: 400 13px Arial, Helvetica, sans-serif;
+}
+
+/*Funny Orange Fab color*/
+.md-fab:hover, .md-fab.md-focused {
+    background-color: rgba(230, 100, 0, .9) !important;
+}
+
+/* When a user has selected a topic in the topic list */
+.selectedListItem {
+    background-color: rgba(158, 158, 158, 0.2);
+}
+
+
+table {border-spacing: 0; width:100%}
+table tbody tr:nth-child(odd) { background-color:#eee; }
+table tbody tr:nth-child(even) { background-color:#fff; }
+table tr th {padding:10px;}
+table tr td {padding:5px;}
+table thead tr { color: rgba(0,0,0,.54); font-size: 12px; font-weight: 700;white-space: nowrap; text-align:left; }
+table tbody { color: rgba(0,0,0,.87);font-size: 13px;vertical-align: middle; }
+table tbody tr { border-top: 1px rgba(0,0,0,.12) solid; }
+.td-center {text-align:center}
+
+.flat-table tr td {border:1px #ccc solid;}
+.flat-table tr th {border:1px #ccc solid;}
+.blue {background-color:#dcedf7};
+
+.json-tree .branch-preview {
+    overflow: hidden;
+    font-style: italic;
+    max-width: 70%;
+    height: 1.5em;
+    opacity: .7;
+
+
+.md-tabs
+{
+    transition: none;
+    transition-duration: 0ms;
+    transition-delay: 0ms;
+}
+.md-tab
+{
+    transition: none;
+    transition-duration: 0ms;
+    transition-delay: 0ms;
+}

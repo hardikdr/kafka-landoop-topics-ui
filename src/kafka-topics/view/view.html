@@ -1,0 +1,65 @@
+<md-card>
+
+  <md-toolbar ng-show="!displayingControlTopics" class="md-hue-2">
+    <div class="md-toolbar-tools">
+      <md-button ng-click="toggleList()">
+        <i ng-show="showList" class="fa fa-expand" aria-hidden="true"></i>
+        <i ng-hide="showList" class="fa fa-compress" aria-hidden="true"></i>
+      </md-button>
+      <h4>
+        <span>{{topicName}}</span>
+      </h4>
+      <span flex></span>
+      <md-button  download="true"
+              ng-click="getData(topicName)"
+              aria-label="Download data"
+              aria-hidden="false">
+        <i class="fa fa-download" aria-hidden="true"></i>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <div flex style="padding: 2px;padding-bottom:2px;">
+
+    <!-- Spinner -->
+    <div us-spinner="{radius:10, width:3, length: 5}" ng-show="showSpinner" style="height:100%"></div>
+    <div ng-show="topicIsEmpty">
+      <br>
+      <p>This topic is empty. No data have been passed through the past 7 days.<br>
+      </p>
+      <p ng-hide="isControlTopic(topicName)">
+        You could delete this topic with:<br>
+      <pre>{{KAFKA_TOPIC_DELETE_COMMAND}} {{topicName}}</pre>
+      </p>
+    </div>
+
+    <div ng-hide="topicIsEmpty">
+    <md-input-container  class="md-block" ng-hide="topicIsEmpty || topicType == 'binary' || selectedTabNnumber > 1 " style="margin-bottom:-25px;">
+      <label>Filter</label>
+      <input ng-model="searchMessages">
+      <!--<md-button style="position: absolute;right: 0px;top: -15px;" class="md-mini" ng-click="showAll()">{{showHideAllButtonLabel}}</md-button>-->
+
+    </md-input-container>
+    <md-tabs ng-hide="showSpinner" style="padding:0" md-dynamic-height md-border-bottom md-selected="selectedTabNnumber">
+
+        <md-tab   label="Topic" ng-click="onTabChanges('topic')"   ng-if="topicType != 'binary'">
+            <div ng-include="'src/kafka-topics/view/templates/normal.html'"></div>
+        </md-tab>
+
+        <md-tab   label="Table" ng-click="onTabChanges('table')" ng-if="topicType != 'binary'">
+            <div ng-include="'src/kafka-topics/view/templates/flat_table.html'"></div>
+        </md-tab>
+
+        <md-tab label="Raw Data" ng-click="onTabChanges('rawdata')">
+            <div ng-include="'src/kafka-topics/view/templates/raw_data.html'"></div>
+        </md-tab>
+
+        <md-tab label="Configuration" ng-click="onTabChanges('config')"  ng-if=" selectedTabNnumber == '3' || hasExtraConfig(topicName) != ''">
+            <div ng-include="'src/kafka-topics/view/templates/withConfiguration.html'"></div>
+        </md-tab>
+
+    </md-tabs>
+  </div>
+  </div>
+
+</md-card>
